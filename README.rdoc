@@ -1,0 +1,18 @@
+To create the new database on the shell
+createdb dbname
+
+To modify the devise error messages:
+config/locales/devise.en.yml
+
+The error messages and password lenght:
+Config/initializers/devise.rb
+
+rails g scaffold catalogo nombre:string direccion_rapida:string user_id:integer
+
+rails g scaffold producto codigo:integer nombre:string precio:float descripcion:string categoria_id:integer
+
+rails g scaffold categoria nombre:string descripcion:string catalogo_id:integer
+
+
+#How to reverse a scaffold
+rails d scaffold entity_name

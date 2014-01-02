@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @catalogo.nombre %>
+</p>
+
+<p>
+  <b>Direccion rapida:</b>
+  <%= @catalogo.direccion_rapida %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @catalogo.user_id %>
+</p>
+
+<p>
+	<%= link_to('Agregar un producto', new_producto_path(:catalogo_id => @catalogo.id ) ) %>
+</p>
+
+
+<%= link_to 'Edit', edit_catalogo_path(@catalogo) %> |
+<%= link_to 'Back', catalogos_path %>
